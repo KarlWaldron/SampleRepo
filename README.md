@@ -112,18 +112,6 @@ spring:
   cache:
     caffeine:
       spec: maximumSize=500,expireAfterWrite=10m
-Front-End Integration
-The project is set up to be integrated with a React front-end. The React app can be set up as described in the incidentreact directory.
-
-Proxy Setup
-To proxy API requests to the backend during development, add the following to the package.json of the React app:
-
-json
-Copy code
-"proxy": "http://localhost:8080"
-Building for Production
-To deploy the React app with the Spring Boot backend:
-
 bash
 Copy code
 npm run build
